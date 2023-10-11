@@ -1,0 +1,17 @@
+(cd desktop )   (check your path)
+
+(mkdir cypress)
+
+(cd cypress)
+
+(code .)
+
+(npm init)  ======>package json
+
+packagename - test (Enter till yes)
+
+(npm install cypress)
+
+(npm install npx)
+
+(npx cypress open)

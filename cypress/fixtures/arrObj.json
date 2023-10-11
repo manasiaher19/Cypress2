@@ -1,0 +1,20 @@
+[
+    {
+        "firstName": "DummyUser",
+        "lastName": "dummyLastName",
+        "email": "dummyuser@dummy.com",
+        "mobile": "9876543210",
+        "webSite": "www.dummywebsite.com",
+        "companyName": "dummyCompany",
+        "message": "test123213782173897129837218937"
+    },
+    {
+        "firstName": "testUser",
+        "lastName": "TestLastName",
+        "email": "testUSer@dummy.com",
+        "mobile": "9876543211",
+        "webSite": "www.dummywebsite12347.com",
+        "companyName": "dummyCompany59785465463",
+        "message": "dghjasudguiasgbdivujkdgbvsajk"
+    }
+]

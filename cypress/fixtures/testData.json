@@ -1,0 +1,9 @@
+{
+    "firstName": "dummyUser",
+    "lastName": "dummyLastname",
+    "email": "dummyUser@email.com",
+    "mobile": "8975345627",
+    "website": "www.dummy.com",
+    "companyName": "dummyCompany",
+    "message": "for test purpose"
+}
