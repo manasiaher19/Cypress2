@@ -17,6 +17,7 @@
 import './commands'
 require('cypress-xpath')
 import "cypress-real-events";
+import 'cypress-file-upload';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 cy.on('uncaught:exception', (err, Runnable) => {
