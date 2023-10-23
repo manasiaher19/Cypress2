@@ -15,3 +15,25 @@ packagename - test (Enter till yes)
 (npm install npx)
 
 (npx cypress open)
+
+
+
+1. tagName==> h1
+2. class Name ==> .para                   multiple class ==>.para.para2
+3. by ID ==>#identifier
+4. General Formula==>p[ankit="test"]
+[class="para para2"]
+
+=================================================================================
+
+attach file
+reporting 
+scroll
+calendar
+dbconnection
+
+******************************************************************************************
+mochawesome
+https://www.npmjs.com/package/cypress-mochawesome-reporter
+
+******************************************************************************************

@@ -1,0 +1,210 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 5,
+    "failures": -4,
+    "start": "2023-10-23T08:46:26.475Z",
+    "end": "2023-10-23T08:46:42.211Z",
+    "duration": 15736,
+    "testsRegistered": 6,
+    "passPercent": 0,
+    "pendingPercent": 83.33333333333334,
+    "other": 5,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a14540ea-230e-45f0-aaaf-b64cc1416e1b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Ankit sir\\Day1.cy.js",
+      "file": "cypress\\e2e\\Ankit sir\\Day1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+          "title": "Traversal mthods",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To get the first DOM element within elements, use the .first() command.",
+              "fullTitle": "Traversal mthods To get the first DOM element within elements, use the .first() command.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://www.flipkart.com/');\ncy.get('._3704LK').type('i phone {enter}');\ncy.get('._3879cV').first().should('have.text', 'SAMSUNG');",
+              "err": {},
+              "uuid": "8ad90f80-936f-439b-bdb6-ac35449ae105",
+              "parentUUID": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To get the last DOM element within elements, use the .last() command.",
+              "fullTitle": "Traversal mthods To get the last DOM element within elements, use the .last() command.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://www.flipkart.com/');\ncy.get('._3704LK').type('I phone {enter}');\ncy.get('._3879cV').last().should('have.text', '10% or more');",
+              "err": {},
+              "uuid": "403da0d4-65d0-4a39-871c-27f6f4e505b6",
+              "parentUUID": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To get a DOM element at a specific index, use the .eq() command.",
+              "fullTitle": "Traversal mthods To get a DOM element at a specific index, use the .eq() command.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://www.flipkart.com/');\ncy.get('._3704LK').type('I phone {enter}');\ncy.get('._3879cV').eq(4).should('have.text', 'Infinix');",
+              "err": {},
+              "uuid": "03e62e56-3a70-4138-95f1-2f24c2d334ed",
+              "parentUUID": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To get children of DOM elements, use the .children() command.",
+              "fullTitle": "Traversal mthods To get children of DOM elements, use the .children() command.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://www.flipkart.com/');\ncy.get('._3704LK').type('I phone {enter}');\ncy.get('._2d0we9').first().children().should('have.length', 7);\ncy.get('._2d0we9').first().children().each(el => {\n  cy.log(el.text());\n});",
+              "err": {},
+              "uuid": "5aadd03f-c585-4e32-84d3-1f63a22895df",
+              "parentUUID": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To get the next sibling DOM element within elements, use the .next() command.",
+              "fullTitle": "Traversal mthods To get the next sibling DOM element within elements, use the .next() command.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://www.flipkart.com/');\ncy.get('._3704LK').type('I phone {enter}');\ncy.get('[class=\"_4921Z t0pPfW\"]').first().next().should('have.text', 'APPLE');\n//cy.get('._3879cV').next().should('have.text','realme')",
+              "err": {},
+              "uuid": "d53c3abc-8b94-49c4-9ea5-7b08a9cafc81",
+              "parentUUID": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "flipkart",
+              "fullTitle": "Traversal mthods flipkart",
+              "timedOut": null,
+              "duration": 9715,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Ankit sir\\\\Day1.cy.js\\\\Traversal mthods -- flipkart (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.flipkart.com/');\ncy.get('._3704LK').type('I phone {enter}');\ncy.contains('APPLE iPhone 14 (Midnight, 128 GB)').should('contain', 'APPLE iPhone 14 (Midni');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `._3704LK`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `._3704LK`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/Ankit sir/Day1.cy.js:46:11)",
+                "diff": null
+              },
+              "uuid": "f20af2cf-06f8-46c3-9285-5e2e21c2a067",
+              "parentUUID": "fb7e7828-8609-4e1c-a51d-408f0b2d9bcc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f20af2cf-06f8-46c3-9285-5e2e21c2a067"
+          ],
+          "pending": [
+            "8ad90f80-936f-439b-bdb6-ac35449ae105",
+            "403da0d4-65d0-4a39-871c-27f6f4e505b6",
+            "03e62e56-3a70-4138-95f1-2f24c2d334ed",
+            "5aadd03f-c585-4e32-84d3-1f63a22895df",
+            "d53c3abc-8b94-49c4-9ea5-7b08a9cafc81"
+          ],
+          "skipped": [],
+          "duration": 9715,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

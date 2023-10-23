@@ -23,3 +23,4 @@ import 'cypress-file-upload';
 cy.on('uncaught:exception', (err, Runnable) => {
     return false
 })
+import 'cypress-mochawesome-reporter/register';

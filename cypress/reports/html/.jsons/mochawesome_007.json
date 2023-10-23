@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-23T08:47:48.310Z",
+    "end": "2023-10-23T08:48:01.913Z",
+    "duration": 13603,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e6cd296a-1f4f-4f3d-9c84-a0053aa38da6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Ankit sir\\Fixtu.cy.js",
+      "file": "cypress\\e2e\\Ankit sir\\Fixtu.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85347531-6104-4e32-9b6a-d60b9ac92876",
+          "title": "Verify contact us form (with fixture)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "read data for multiple users from fixture file",
+              "fullTitle": "Verify contact us form (with fixture) read data for multiple users from fixture file",
+              "timedOut": null,
+              "duration": 10093,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('multipleUser2').then(user => {\n  user.forEach(el => {\n    cy.visit('https://www.webdriveruniversity.com/Contact-Us/contactus.html');\n    cy.get('[name=\"first_name\"]').type(el.firstName);\n    cy.get('[name=\"last_name\"]').type(el.lastName);\n    cy.get('[name=\"email\"]').type(el.email);\n    cy.get('[name=\"message\"]').type(el.comments);\n    cy.get('[value=\"SUBMIT\"]').click();\n    cy.get('h1').should('have.text', 'Thank You for your Message!');\n  });\n});",
+              "err": {},
+              "uuid": "0c3637c4-5b0d-4cc5-95f9-4cc083907eaf",
+              "parentUUID": "85347531-6104-4e32-9b6a-d60b9ac92876",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c3637c4-5b0d-4cc5-95f9-4cc083907eaf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10093,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

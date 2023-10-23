@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-10-23T08:48:04.503Z",
+    "end": "2023-10-23T08:48:28.499Z",
+    "duration": 23996,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e57f90a4-141c-4de0-9e31-e9adda5d02b1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Ankit sir\\fixtureDay1.cy.js",
+      "file": "cypress\\e2e\\Ankit sir\\fixtureDay1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0ebe197-afe2-44b9-992f-2caa95a80e18",
+          "title": "Verify contactUs form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify contactUs form with valide details",
+              "fullTitle": "Verify contactUs form verify contactUs form with valide details",
+              "timedOut": null,
+              "duration": 18223,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Ankit sir\\\\fixtureDay1.cy.js\\\\Verify contactUs form -- verify contactUs form with valide details (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://mediaproper.com/contact-us/');\ncy.get('input_1_1').type(testData.firstName);\ncy.get('input_1_2').type(testData.lastName);\ncy.get('input_1_3').type(testData.email);\ncy.get('input_1_4').type(testData.mobile);\ncy.get('input_1_5').type(testData.website);\ncy.get('input_1_6').type(testData.companyName);\ncy.get('input_1_7').type(testData.message);\ncy.get('submit_button_1').click();\ncy.get('h1').should('be.visible');\n//assertion==> validation \n//implicit assertion ==> should()\n//explicit assertion ==> expect()",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input_1_1`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input_1_1`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/Ankit sir/fixtureDay1.cy.js:17:11)",
+                "diff": null
+              },
+              "uuid": "e04399f1-49a6-44a3-86f5-580a0261ab18",
+              "parentUUID": "f0ebe197-afe2-44b9-992f-2caa95a80e18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e04399f1-49a6-44a3-86f5-580a0261ab18"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18223,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
